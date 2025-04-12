@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="number" id="nombre1" value="0" placeholder="Nombre 1" />
+    <input type="number" id="nombre2" value="0" placeholder="Nombre 2" />
+    <select name="" id="operateur">
+        <option value="add">+</option>
+        <option value="sous">-</option>
+        <option value="mult">*</option>
+        <option value="div">/</option>
+        <option value="x">x</option>
+    </select>
+    <button id="button1">calculer</button>
+  </body>
+  <script>
+    var button = document.getElementById("button1");
+    button.addEventListener("click", function () {
+      var nombre1_element = document.getElementById("nombre1").value;
+      var nombre2_element = document.getElementById("nombre2").value;
+      var operateur = document.getElementById("operateur").value;
+      
+      var nombre1 = parseFloat(nombre1_element);
+      var nombre2 = parseFloat(nombre2_element);
+      var resultat = 0;
+      if(operateur == "add"){
+        resultat = nombre1 + nombre2
+      }else if(operateur == "sous"){
+        resultat = nombre1 - nombre2
+      }else if(operateur == "mult"){
+        resultat = nombre1 * nombre2
+      }else if(operateur == "div"){
+        resultat = nombre1 / nombre2
+      }
+
+      alert(resultat)
+      
+    });
+
+    //variables
+
+    //types
+
+    //operateur
+
+    //condition
+  </script>
+</html>
