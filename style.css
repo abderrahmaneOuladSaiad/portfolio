@@ -83,46 +83,7 @@ background-color: rgb(231, 231, 243);
   background-color: orangered;
 }
   /* Skills Section with Grid */
-  .skills {
-    padding: 80px 0;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 60px;
-    font-size: 36px;
-    color: #212529;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.skill-card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 30px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s;
-}
-
-.skill-card:hover {
-    transform: translateY(-10px);
-}
-
-.skill-icon {
-    font-size: 40px;
-    margin-bottom: 20px;
-    color: #17a2b8;
-}
-
-.skill-title {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
+ 
 
 /* --------------- Projet -------------------- */
 
@@ -207,3 +168,40 @@ input,textarea{
   border-radius: 4px;
   font-size: 15px;
 }
+
+
+/* --------------- Skills -------------------- */
+.skills{
+  padding: 80px 0;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  gap: 30px;
+}
+.skill-card{
+  background-color: white;
+  box-shadow: 0 5px 15px rgb(185, 185, 185);
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  transition: transform 0.2s;
+}
+.skill-card:hover{
+  transform: translateY(-10px);
+}
+
+.skill-icon{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.skill-icon:hover{
+  color: orangered;
+}
+
+.skill-title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
